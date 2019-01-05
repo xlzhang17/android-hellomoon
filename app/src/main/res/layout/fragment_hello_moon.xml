@@ -10,14 +10,10 @@
 
     <TableRow android:gravity="center|bottom"
         android:layout_weight="0">
-        <Button android:id="@+id/hellomoon_playButton"
+        <Button android:id="@+id/hellomoon_playPauseButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hellomoon_play"/>
-        <Button android:id="@+id/hellomoon_pauseButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/hellomoon_pause"/>
+            android:text="@string/hellomoon_playPause"/>
         <Button android:id="@+id/hellomoon_stopButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
