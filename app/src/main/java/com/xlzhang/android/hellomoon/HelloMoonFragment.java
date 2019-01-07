@@ -14,6 +14,13 @@ public class HelloMoonFragment extends Fragment {
     private Button mPlayButton;
     private Button mStopButton;
     private AudioPlayer mPlayer = new AudioPlayer();
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setRetainInstance(true);
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
