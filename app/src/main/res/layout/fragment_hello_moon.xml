@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-    <ImageView android:src="@drawable/armstrong_on_moon"
-        android:contentDescription="@string/hellomoon_desctiption"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="center"
-        android:layout_weight="1"/>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<ImageView android:src="@drawable/armstrong_on_moon"-->
+    <!--android:contentDescription="@string/hellomoon_desctiption"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scaleType="center"-->
+    <!--android:layout_weight="1"/>-->
+    <VideoView
+        android:id="@+id/hellomoon_videoView"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
 
-    <TableRow android:gravity="center|bottom"
-        android:layout_weight="0">
-        <Button android:id="@+id/hellomoon_playPauseButton"
+    <TableRow
+        android:layout_weight="0"
+        android:gravity="center|bottom">
+
+        <Button
+            android:id="@+id/hellomoon_playPauseButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hellomoon_playPause"/>
-        <Button android:id="@+id/hellomoon_stopButton"
+            android:text="@string/hellomoon_playPause" />
+
+        <Button
+            android:id="@+id/hellomoon_stopButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hellomoon_stop"/>
+            android:text="@string/hellomoon_stop" />
     </TableRow>
 
 </TableLayout>
